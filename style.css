@@ -27,7 +27,7 @@ z-index:2;
 }
 html {
     width: 100%;
-    background-image: url(../responsive-club-webpage/imagenes/bg-1.jpg);
+    background-image: url(bg-1.jpg);
     background-size: cover;
     background-attachment: fixed;
     overflow-x: hidden;
@@ -70,7 +70,7 @@ this way the opacity cannot affect the child elements since is apply directly as
 }
 
 #screen {
-    background-image: url(../responsive-club-webpage/imagenes/bg-2.jpg);
+    background-image: url(bg-2.jpg);
     background-attachment: fixed;
     width: 100%;
     height: 100%;
