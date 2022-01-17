@@ -1,0 +1,188 @@
+@font-face {
+    font-family:'Crimson Text';
+    src: url(https://fonts.gstatic.com/s/crimsontext/v11/wlpogwHKFkZgtmSR3NB0oRJfajhRK_Y.woff2) format('woff2');
+    src:url(https://fonts.gstatic.com/s/crimsontext/v11/wlprgwHKFkZgtmSR3NB0oRJfajDqDuNS_LU.woff2) format('woff2');
+    src:url(https://fonts.gstatic.com/s/crimsontext/v11/wlp2gwHKFkZgtmSR3NB0oRJfbwhT.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/crimsontext/v11/wlppgwHKFkZgtmSR3NB0oRJX1C1GDNNQ.woff2) format('woff2');
+}
+@font-face {
+    font-family:'Merriweather';
+    src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4m0qyriQwlOrhSvowK_l5-eRZOf-I.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5-fCZM.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l52xwNZWMf6.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l52_wFZWMf6.woff2) format('woff2');
+}
+@font-face {
+    font-family:'Niconne';
+    src: url(https://fonts.gstatic.com/s/niconne/v10/w8gaH2QvRug1_rTfnQyn2Q.woff2) format('woff2');
+}
+
+* {
+color:rgb(83, 42, 138);
+padding:0;
+margin:0;
+text-align: center;
+z-index:2;
+
+}
+html {
+    width: 100%;
+    background-image: url(../responsive-club-webpage/imagenes/bg-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    
+}
+header {
+    margin-bottom: 6em;
+}
+ul {
+display: flex;
+width: 100%;
+height: 7%;
+background-color: rgb(48, 119, 83);
+position: fixed;
+top:0;
+justify-content:space-evenly;
+align-items:center;
+z-index: 5;
+}
+li {
+    list-style-type: none;
+}
+a {
+color:rgb(234, 238, 182);
+font-family:'Merriweather';
+text-decoration: none;
+font-size: 1.4em;
+}
+/* A good solution for readability is to put the opacity screen as main backgound colour a the background image in a empty container,
+this way the opacity cannot affect the child elements since is apply directly as a bacground property e.g. rgba/hsla*/
+.presentation {
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-size: cover;
+    background-position:center bottom;
+    z-index: -1;
+}
+
+#screen {
+    background-image: url(../responsive-club-webpage/imagenes/bg-2.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+} 
+main {
+    margin: 5% 5%;
+}
+img {
+    width: 70%;
+    border: ridge 4px rgb(21, 21, 26);
+    border-radius: 30%;
+}
+h1 {
+    font-family:'Niconne';
+    font-size: 6em;
+    letter-spacing: .05em;
+}
+h2 {
+    font-family:'Niconne';
+    font-size: 3em;
+    letter-spacing: .05em;
+    margin: 1em 0;
+}
+p {
+    font-family: 'Crimson Text';
+    font-size: 1.2em;
+    line-height: 1.3em;
+    word-spacing: 0.3em;
+    margin: 2em 1.1em;
+}
+
+#join {
+    width: 15%;
+    padding-bottom: .2em;
+    border: outset 4px rgb(21, 21, 26);
+    border-radius: 45%;
+    font-size: 2em;
+    background-color:rgba(185, 30, 51,.9);
+   text-align: center;
+  position: relative;
+  left: 40%;
+  margin-top:.8em;
+}
+
+.ini {
+    flex-basis: 10em;
+    flex-grow: 2;
+    flex-shrink: 1;
+}
+
+.pair {
+    display: flex;
+    flex: 1 2 40%;
+    justify-content: space-between;
+    flex-direction: row;
+  flex-wrap: wrap;
+}
+.pair img {
+    height: 15em;
+    width:auto;
+    margin: 1em 1.8em;
+    opacity: .9;
+}
+
+@media only screen  and (max-width: 430px) and (min-width: 320px) {
+    a {
+        font-size: .6em;
+        word-spacing: .1em;
+    }
+    h1 {
+        font-size: 4em;
+    }
+    .pair {
+        display: flex;
+        justify-content: space-between;
+    }
+    .pair img {
+        height:5em;
+    }
+    #join {
+        padding: .3em;
+    } 
+}
+
+@media only screen  and (min-width: 480px) {
+a {
+    font-size: .77em;
+}
+h1 {
+    font-size: 4em;
+}
+.pair {
+    display: flex;
+    justify-content: space-between;
+}
+.pair img {
+    height:9em;
+}
+#join {
+    padding: .6em;
+}
+}
+
+@media only screen and (min-width:720px){
+a {
+    font-size: 1em;
+}
+}
+
+@media only screen and (min-width:992px) {
+    p {
+        font-size: 1.5em;
+        padding: .8em;
+    }
+}
